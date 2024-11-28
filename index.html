@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Order summary carde</title>
+
+    <style type="text/tailwindcss">
+      * {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body
+    class="w-screen h-screen flex sm:justify-center items-center bg-[url(./images/pattern-background-desktop.svg)]"
+  >
+    <main
+      class="max-w-[400px] bg-red-300 overflow-hidden bg-white drop-shadow-lg rounded-3xl m-4"
+    >
+      <!-- <picture>
+        <source
+          media="(max-width:640px )"
+          srcset="./images/pattern-background-mobile.svg"
+          />
+          <img src="./images/pattern-background-desktop.svg" alt="desktop" />
+      </picture> -->
+      <div class="">
+        <img
+          class="w-full object-cover"
+          src="./images/illustration-hero.svg"
+          alt=""
+        />
+      </div>
+      <div class="py-8 sm:px-12 px-8">
+        <h1 class="text-center text-3xl font-[900] text[#1f2f56]">
+          Order Summary
+        </h1>
+        <p class="text-center text-4 my-4 font-[500] text-[#7280a7]">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="flex items-center gap-4 bg-[#f5f7ff] px-4 py-4 rounded-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+              <path
+                fill="#717FA6"
+                fill-rule="nonzero"
+                d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
+              />
+            </g>
+          </svg>
+          <div>
+            <h2 class="sm:text-base text-sm text-[#1f2f56] font-[700]">
+              Annual Plan
+            </h2>
+            <p class="sm:text-base text-sm text-[#7280a7] font-[300]">
+              $59.99/year
+            </p>
+          </div>
+          <a
+            class="ml-auto sm:text-sm text-[12px] text-[#3829e0] border-b-[1px] border-[#3829e0] font-[700]"
+            href="#"
+            >Change</a
+          >
+        </div>
+        <button
+          class="w-full py-4 bg-[#3829e0] rounded-xl text-white font-[700] hover:bg-[#7280a7] my-6 shadow-xl"
+        >
+          Proceed to Payment
+        </button>
+        <button class="w-full font-[700] text-[#7280a7] hover:text-[#1f2f56]">
+          Cancel Order
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
